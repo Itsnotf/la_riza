@@ -70,7 +70,7 @@ export default function AnggotaIndex({ anggotas, flash }: Props) {
     return (
         <AppLayout breadcrumbs={breadcrumbs}>
             <Head title="Anggota" />
-            <div className="flex h-full flex-1 flex-col gap-4 rounded-xl p-4">
+            <div className="flex h-full flex-1 flex-col gap-4 rounded-xl p-4 ">
                 <DataTable columns={AnggotaColumns(canEdit, canDelete, handleDelete)} data={anggotas} page="anggota" canCreate={canCreate} />
 
                 <Dialog open={open} onOpenChange={setOpen}>
